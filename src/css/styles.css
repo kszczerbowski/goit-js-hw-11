@@ -13,6 +13,10 @@ body {
   margin: 0px;
 }
 
+.container {
+  margin: 5px;
+}
+
 .search-form {
   background-color: #3c54b4;
   width: 100%;
@@ -33,4 +37,33 @@ body {
 
 .pixabay img {
   max-width: 150px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.photo-card {
+  margin: 5px;
+  box-shadow: 1px 4px 6px 0px #00000029,
+  0px 4px 4px 0px #0000000F,
+  0px 1px 1px 0px #0000001F;
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.75;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
