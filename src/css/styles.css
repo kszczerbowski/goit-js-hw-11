@@ -49,6 +49,7 @@ body {
   box-shadow: 1px 4px 6px 0px #00000029,
   0px 4px 4px 0px #0000000F,
   0px 1px 1px 0px #0000001F;
+  text-decoration: none;
 }
 
 .photo-card img {
@@ -60,10 +61,34 @@ body {
 .info {
   display: flex;
   width: 100%;
+  justify-content: space-around;
 }
 
 .info-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.load-more {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 10px;
+  background-color: #3c54b4;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 300ms;
+  transition-property: background-color;
+}
+
+.load-more:hover, .load-more:focus {
+  background-color: #273775;
+}
+
+.hidden {
+  display: none;
 }
