@@ -1,3 +1,4 @@
+import '../css/styles.css';
 import Notiflix from 'notiflix';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
@@ -79,7 +80,7 @@ async function searchPictures() {
         });
       } else {
         window.scrollBy({
-          top: cardHeight * 2,
+          top: cardHeight * 2.33,
           behavior: "smooth",
         });
       }
@@ -101,3 +102,7 @@ loadMoreBtn.addEventListener('click', () => {
   lightbox.refresh();
   searchPictures();
 });
+
+document.querySelector('form.search-form').addEventListener('submit', (event) => {
+  event.preventDefault();
+})
