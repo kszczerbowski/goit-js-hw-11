@@ -66,8 +66,8 @@ async function searchPictures() {
       per_page: 40,
     });
     const response = await axios.get(`https://pixabay.com/api/?${searchParams}`);
-    if (pageNumber === 1) Notiflix.Notify.success(`Hooray! We found ${response.data.totalHits} images.`)
     if (response.data.totalHits > 0) {
+      if (pageNumber === 1) Notiflix.Notify.success(`Hooray! We found ${response.data.totalHits} images.`)
       renderPictures(response, markupArr);
       lightbox = new SimpleLightbox('.gallery a');
       const { height: cardHeight } = document
@@ -88,7 +88,7 @@ async function searchPictures() {
     } else {
       Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.");
     }
-    if (document.querySelectorAll('div.photo-card').length === response.data.totalHits) {
+    if (document.querySelectorAll('div.photo-card').length === response.data.totalHits && response.data.totalHits !== 0) {
       Notiflix.Notify.info("We're sorry, but you've reached the end of search results.")
       loadMoreBtn.classList.add('hidden');
     }
