@@ -39,6 +39,36 @@ body {
   max-width: 150px;
 }
 
+.dragon {
+  max-width: 300px;
+  position: fixed;
+  top: 30vh;
+  transition-property: left;
+  transition-duration: 2000ms;
+}
+
+.go-left {
+  left: -300px;
+}
+
+.go-right {
+  left: 100vw;
+}
+
+.rotated {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.scroll-up-arrow {
+  max-width: 50px;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  opacity: 75%;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
