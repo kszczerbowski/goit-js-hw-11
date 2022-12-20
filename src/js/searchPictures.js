@@ -148,6 +148,6 @@ scrollUpArrow.addEventListener('click', () => {
 })
 
 document.addEventListener("mousewheel", (event) => {
-  if(event.wheelDelta < 0) scrollUpArrow.classList.remove('hidden');
+  if(event.wheelDelta < 0 && document.querySelectorAll('.photo-card').length !== 0) scrollUpArrow.classList.remove('hidden');
 })
 

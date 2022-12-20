@@ -74,6 +74,18 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  }
+
 .photo-card {
   margin: 5px;
   box-shadow: 1px 4px 6px 0px #00000029,
