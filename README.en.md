@@ -1,4 +1,3 @@
-# Parcel template
 
 This project was created with Parcel - [documentation](https://parceljs.org/).
 
