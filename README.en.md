@@ -1,6 +1,6 @@
 # Parcel template
 
-This project was created with Parcel [refer to documentation](https://parceljs.org/).
+This project was created with Parcel - [documentation](https://parceljs.org/).
 
 This is a homework project done during my IT Full Stack Developer course made in GoIT school in the end of JavaScript module.
 
